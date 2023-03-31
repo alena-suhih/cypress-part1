@@ -1,0 +1,22 @@
+{
+  "name": "cypress1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:mobile": "npx cypress open --env view-port=iphone-xr",
+    "test:desktop": "npx cypress open --env view-port=macbook-13",
+    "test:chrome:headed": "npx cypress run --headed",
+    "test:firefox:headed": "npx cypress run --headed -b firefox",
+    "test:chrome:headless": "npx cypress run",
+    "test:firefox:headless": "npx cypress run -b firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.8.1"
+  }
+}
