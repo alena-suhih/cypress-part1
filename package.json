@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:mobile": "npx cypress open --env view-port=iphone-xr",
-    "test:desktop": "npx cypress open --env view-port=macbook-13",
-    "test:chrome:headed": "npx cypress run --headed",
-    "test:firefox:headed": "npx cypress run --headed -b firefox",
-    "test:chrome:headless": "npx cypress run",
-    "test:firefox:headless": "npx cypress run -b firefox"
+    "test:chrome:mobile": "npx cypress run --browser chrome --headed --config-file cypressmobile.env.js",
+    "test:chrome:headless": "npx cypress run --browser chrome",
+    "test:firefox:headless": "npx cypress run --browser firefox",
+    "test:firefox:mobile": "npx cypress run --browser firefox --headed --config-file cypressmobile.env.js"
   },
   "keywords": [],
   "author": "",

@@ -1,8 +1,13 @@
 describe("login page", () => {
-  beforeEach(() => {
-    if (Cypress.env("view-port")) {
-      cy.viewport();
+  before(() => {
+    const width = Cypress.env("viewportWidth");
+    const height = Cypress.env("viewportHeight");
+    if (width && height) {
+      cy.viewport(width, height);
     }
+  });
+
+  beforeEach(() => {
     cy.visit("/");
   });
 

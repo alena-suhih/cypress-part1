@@ -4,8 +4,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "http://localhost:3000/",
     env: {
-      viewportHeight: 800,
-      viewportWidth: 1280,
+      viewportHeight: 896,
+      viewportWidth: 414,
     },
     retries: {
       openMode: 0,
